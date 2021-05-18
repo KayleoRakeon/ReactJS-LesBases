@@ -15,7 +15,11 @@
     <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" defer></script>
     <!-- Attribut defer : Permet de faire en sorte que le chargement des script ne bloque pas le chargement des éléments du DOM -->
 
-    <script src="app.js" defer></script>
+    <!-- Babel : Pour que le JSX fonctionne correctement -->
+    <script crossorigin src="https://unpkg.com/babel-standalone@6.26.0/babel.min.js" defer></script>
+
+    <!-- <script src="app.js" defer></script> -->
+    <script src="jsx.js" type="text/babel" defer></script>
 </head>
 
 <body>
