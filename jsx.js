@@ -1,9 +1,9 @@
 let n = 0
 
 const render = () => {
-    const title = React.createElement('h1', {}, 'Hello world ! ',
-        React.createElement('span', {}, n)
-    )
+    const title = <h1>
+        Hello World ! <span>{n}</span>
+    </h1>
 
     ReactDOM.render(title, document.querySelector('#app'))
 }
