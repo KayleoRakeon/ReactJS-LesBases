@@ -1,9 +1,23 @@
 let n = 0
 
 const render = () => {
-    const title = <h1>
-        Hello World ! <span>{n}</span>
-    </h1>
+    const undertale = [
+        'Sans',
+        'Papyrus',
+        'Undyne',
+        'Alphys',
+        'Toriel',
+        'Asgore',
+        'Asriel',
+        'Frisk',
+    ]
+
+    const title = <React.Fragment>
+        <h1 className="title" id="title">
+            Hello World ! <span>{n}</span>
+        </h1>
+        {undertale.map((character, i) => <li key={i}>{character}</li>)}
+    </React.Fragment>
 
     ReactDOM.render(title, document.querySelector('#app'))
 }
@@ -14,3 +28,4 @@ window.setInterval(() => {
     render()
     n++
 }, 1000)
+
